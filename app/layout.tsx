@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import Credit from "./components/Credit";
-
-
 
 export const metadata: Metadata = {
   title: "I am Amos Pelumi",

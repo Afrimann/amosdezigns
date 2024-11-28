@@ -33,14 +33,14 @@ const Hero = () => {
                             className='object-contain'
                             data-aos='zoom-in'
                         />
-                        Hey, I'm Amos
+                        Hey, I&apos;m Amos
                     </span>
                     <span data-aos='fade-up' className='text-white text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-extrabold font-playfair'>
                         Product Designer
                     </span>
 
                     <p className='text-white text-[10px] md:text-[11px] lg:text-[14px]  font-roboto max-w-[97%]' data-aos='fade-up'>
-                        I'm a passionate product designer with over 5 years of experience.
+                        I&apos;m a passionate product designer with over 5 years of experience.
                         I craft digital solutions that are user-focused and impactful.
 
                         <span data-aos='fade-up' className='block mt-2'> My passion lies in turning ideas into designs that resonate and inspire</span>

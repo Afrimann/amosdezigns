@@ -1,21 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Basic styles */
+@layer utilities {
+  .bg-white-opacity-sm {
+    @apply bg-[rgba(255,255,255,0.1)];
+  }
+  .bg-button-blue {
+    @apply bg-custom-blue;
+  }
+  .bg-custom-pink{
+    @apply bg-custom-pink
+  }
+  .border-button-border {
+    @apply border border-custom-border;
+  }
+  .text-custom{
+    @apply text-custom-border
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Home styles start */
+.home__wrapper {
+  @apply flex flex-col w-full min-h-screen bg-black gap-10; 
 }
+/* Home styles end */
+
+/* Hero styles start */
+.hero {
+  @apply bg-black w-full h-screen;
+}
+/* Hero styles end */
+
+/* Header styles start */
+.header {
+  @apply w-[500px] h-[80px] flex flex-col justify-end items-end mx-auto;
+}
+
+.header__nav {
+  @apply hidden  w-full h-[40px] border border-custom-white align-middle md:flex items-center justify-center px-6 rounded-3xl bg-white-opacity-sm;
+}
+
+.header__nav-links-container {
+  @apply w-full flex justify-between z-0;
+}
+
+.header__nav-links {
+  @apply z-10;
+}
+/* Header styles end */
+
+/* Intro styles start */
+.intro__section {
+  @apply flex gap-10 w-[90%] md:w-[80%] lg:w-[70%] h-[380px] mx-auto mt-20 items-center justify-center;
+}
+/* Intro styles end */
+
+/* project styles start */
+.project__wrapper{
+  @apply w-screen min-h-screen flex flex-col items-center py-10 pb-4 justify-center;
+}
+.project__intro{
+  @apply font-playfair font-extrabold text-[15px] md:text-[20px] lg:text-[30px] text-custom-cream text-center
+}
+.project__listing{
+  @apply w-[70%] mx-auto flex flex-wrap justify-center items-center gap-6 px-20 py-10;
+} 
+.project__card{
+  @apply flex flex-col p-2 w-[300px] h-[270px] border-[0.8px] border-custom-card-border bg-[rgb(19,19,19)] rounded-lg cursor-pointer hover:scale-110 transition-all ease-in duration-300
+}
+
+/* project styles end */
+
+/* review styles start */
+.review{
+  @apply flex flex-col items-center justify-center mx-auto
+}
+.review__tools-container{
+  @apply w-full min-h-[150vh]  text-white
+}
+
+/* review styles end */
+

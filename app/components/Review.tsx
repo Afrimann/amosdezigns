@@ -13,17 +13,23 @@ const Review = () => {
 
 
     const showNextReviewContent = () => {
-        setPrevDisabled(false)
-        selected < ReviewDetails.length - 1 ?
-            setSelected((current) => current + 1)
-            : setNextDisabled(true)
-
-    }
+        setPrevDisabled(false);
+        if (selected < ReviewDetails.length - 1) {
+            setSelected((current) => current + 1);
+        } else {
+            setNextDisabled(true);
+        }
+    };
+    
     const showPrevReviewContent = () => {
-        setNextDisabled(false)
-        selected === 0 ? setPrevDisabled(true) :
-            setSelected((current) => current - 1)
-    }
+        setNextDisabled(false);
+        if (selected === 0) {
+            setPrevDisabled(true);
+        } else {
+            setSelected((current) => current - 1);
+        }
+    };
+    
 
     return (
         <div className='review'>

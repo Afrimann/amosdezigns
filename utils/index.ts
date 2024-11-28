@@ -78,22 +78,22 @@ export const SkillSet = [
 export const Socials = [
     {
         id:1,
-        social: 'mage_behance.png',
+        social: '/mage_behance.png',
         alt: 'behance'
     },
     {
         id:2,
-        social: 'prime_twitter.png',
+        social: '/prime_twitter.png',
         alt: 'X'
     },
     {
         id:3,
-        social: 'ic_baseline-facebook.png',
+        social: '/ic_baseline-facebook.png',
         alt: 'facebook'
     },
     {
         id:4,
-        social: 'ri_instagram-fill.png',
+        social: '/ri_instagram-fill.png',
         alt: 'instagram'
     }
 ]
